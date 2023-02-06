@@ -26,7 +26,7 @@ console.log('Is this a test? y/X ', bcolors.BOLD)
 is_test = input() == 'y'
 if is_test:
     hunt_cd = 10
-    farm_cd = 25
+    farm_cd = 3
     work_cd = 15
     lootbox_cd = 60
     adventure_cd = 40
@@ -37,13 +37,13 @@ console.log('Please fill the required information: ', bcolors.WARNING)
 
 gold = int(input('Gold: '))
 bank = int(input('Bank: '))
-normal_seeds = int(input('Seeds: '))
-carrot_seeds = int(input('Carrot Seeds: '))
-potato_seeds = int(input('Potato Seeds: '))
-bread_seeds = int(input('Bread Seeds: '))
+basic = int(input('Seeds: '))
+carrot = int(input('Carrot Seeds: '))
+potato = int(input('Potato Seeds: '))
+bread = int(input('Bread Seeds: '))
 heal_potions = int(input('Heal Potions: '))
 
-inventory = Storage(gold, bank, normal_seeds, carrot_seeds, potato_seeds, bread_seeds, heal_potions)
+inventory = Storage(gold, bank, basic, carrot, potato, bread, heal_potions)
 #endregion
 
 #region Working options --
@@ -80,23 +80,22 @@ console.separate()
 
 #region Farming --
 
-has_seeds = carrot_seeds > 0 or bread_seeds > 0 or normal_seeds > 0 or potato_seeds > 0
+has_seeds = carrot > 0 or bread > 0 or basic > 0 or potato > 0
 
 if has_seeds == False:
     console.log("You can't farm since you don't have any seeds", bcolors.WARNING)
 
 seed_types = {
-    0: "normal seeds",
-    1: "carrot seeds",
-    2: "bread seeds",
-    3: "potato seeds"
+    0: "basic",
+    1: "carrot",
+    2: "bread",
+    3: "potato"
 }
 
 seed_type = ""
 if has_seeds:
     seed_type = console.multiple_choise(seed_types)
 
-seed_type = seed_type.replace(' ', '_')
 seed_command = 'farm ' + seed_type
 console.separate()
 #endregion
@@ -111,7 +110,7 @@ guild_options = {
 guild_command = "raid"
 
 if has_guild:
-    guild_command = console.multiple_choise(guild_options)
+    guild_command = f'guild {console.multiple_choise(guild_options)}'
 console.separate()
 #endregion
 

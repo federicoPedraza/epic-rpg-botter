@@ -4,13 +4,13 @@ from log import Log
 import atexit
 
 class Storage:
-    def __init__(self, gold, bank, normal_seeds, carrot_seeds, potato_seeds, bread_seeds, heal_potions):
+    def __init__(self, gold, bank, basic, carrot, potato, bread, heal_potions):
         self.gold = gold
         self.bank = bank
-        self.normal_seeds = normal_seeds
-        self.carrot_seeds = carrot_seeds
-        self.bread_seeds = bread_seeds
-        self.potato_seeds = potato_seeds
+        self.basic = basic
+        self.carrot = carrot
+        self.bread = bread
+        self.potato = potato
         self.heal_potions = heal_potions
         self.logs = Log(self)
         atexit.register(self.logs.print, args=self)

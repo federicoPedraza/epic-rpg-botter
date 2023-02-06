@@ -17,10 +17,10 @@ def tryspell(spell_tag, inventory, requirement):
     if (requirement_count <= 0):
         console.log(f"There are no more resources for {spell_tag} ({requirement})")
         return
-
+    
     # Take if untaken
     if lock.acquire(blocking=False):
-        pyautogui.typewrite(spell_tag)
+        pyautogui.typewrite(spell_tag.lower())
         pyautogui.press('enter')
         inventory.logs.log(spell_tag)
         inventory.remove(requirement)
