@@ -1,0 +1,21 @@
+
+[rpg hunt together] -- 04-49-19
+[rpg axe] -- 04-49-24
+[rpg farm normal_seeds] -- 04-49-34
+[rpg hunt together] -- 04-49-40
+[rpg axe] -- 04-49-44
+[rpg adventure] -- 04-49-49
+[rpg heal] -- 04-49-51
+[rpg hunt together] -- 04-49-55
+[rpg farm normal_seeds] -- 04-50-05
+[rpg axe] -- 04-50-09
+[rpg withdraw 500] -- 04-50-15
+[rpg buy common lootbox] -- 04-50-18
+[rpg open common lootbox] -- 04-50-20
+[rpg hunt together] -- 04-50-26
+[rpg axe] -- 04-50-30
+[rpg adventure] -- 04-50-37
+[rpg heal] -- 04-50-39
+[rpg hunt together] -- 04-50-47
+[rpg axe] -- 04-50-50
+[rpg hunt together] -- 04-51-02

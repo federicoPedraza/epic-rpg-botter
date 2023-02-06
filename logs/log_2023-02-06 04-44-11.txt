@@ -1,0 +1,12 @@
+
+[rpg hunt together] -- 04-44-41
+[rpg chainsaw] -- 04-44-45
+[rpg farm normal_seeds] -- 04-44-56
+[rpg hunt together] -- 04-45-01
+[rpg chainsaw] -- 04-45-06
+[rpg adventure] -- 04-45-10
+[rpg heal] -- 04-45-13
+[rpg hunt together] -- 04-45-17
+[rpg farm normal_seeds] -- 04-45-26
+[rpg chainsaw] -- 04-45-32
+[rpg hunt together] -- 04-45-38
